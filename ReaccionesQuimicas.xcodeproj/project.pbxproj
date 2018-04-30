@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4620CE3E2095112000FBCA18 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620CE3D2095112000FBCA18 /* ViewController4.swift */; };
 		46339A672076580800FB45F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46339A662076580800FB45F0 /* AppDelegate.swift */; };
 		46339A692076580800FB45F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46339A682076580800FB45F0 /* ViewController.swift */; };
 		46339A6C2076580800FB45F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46339A6A2076580800FB45F0 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		46339A712076580900FB45F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46339A6F2076580900FB45F0 /* LaunchScreen.storyboard */; };
 		46339A7C2076580900FB45F0 /* ReaccionesQuimicasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46339A7B2076580900FB45F0 /* ReaccionesQuimicasTests.swift */; };
 		46339A872076580900FB45F0 /* ReaccionesQuimicasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46339A862076580900FB45F0 /* ReaccionesQuimicasUITests.swift */; };
+		46339A9A20765AE100FB45F0 /* Main iPhone 8 Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46339A9420765AE100FB45F0 /* Main iPhone 8 Plus.storyboard */; };
+		46339A9B20765AE100FB45F0 /* Main iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46339A9620765AE100FB45F0 /* Main iPad.storyboard */; };
+		46339A9C20765AE100FB45F0 /* Main iPhone 8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46339A9820765AE100FB45F0 /* Main iPhone 8.storyboard */; };
+		467E8E9220922FA40079431F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E8E9120922FA40079431F /* ViewController3.swift */; };
+		467E8E9520923DCE0079431F /* reacciones.json in Resources */ = {isa = PBXBuildFile; fileRef = 467E8E9320923DCD0079431F /* reacciones.json */; };
+		467E8E9620923DCE0079431F /* compuestos.json in Resources */ = {isa = PBXBuildFile; fileRef = 467E8E9420923DCD0079431F /* compuestos.json */; };
+		46B56E85208FC7A6007EECAE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B56E84208FC7A6007EECAE /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4620CE3D2095112000FBCA18 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		46339A632076580800FB45F0 /* ReaccionesQuimicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaccionesQuimicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46339A662076580800FB45F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46339A682076580800FB45F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,13 @@
 		46339A822076580900FB45F0 /* ReaccionesQuimicasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaccionesQuimicasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46339A862076580900FB45F0 /* ReaccionesQuimicasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaccionesQuimicasUITests.swift; sourceTree = "<group>"; };
 		46339A882076580900FB45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46339A9520765AE100FB45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPhone 8 Plus.storyboard"; sourceTree = "<group>"; };
+		46339A9720765AE100FB45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPad.storyboard"; sourceTree = "<group>"; };
+		46339A9920765AE100FB45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main iPhone 8.storyboard"; sourceTree = "<group>"; };
+		467E8E9120922FA40079431F /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		467E8E9320923DCD0079431F /* reacciones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reacciones.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		467E8E9420923DCD0079431F /* compuestos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = compuestos.json; sourceTree = "<group>"; };
+		46B56E84208FC7A6007EECAE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +113,17 @@
 		46339A652076580800FB45F0 /* ReaccionesQuimicas */ = {
 			isa = PBXGroup;
 			children = (
+				467E8E9420923DCD0079431F /* compuestos.json */,
+				467E8E9320923DCD0079431F /* reacciones.json */,
 				46339A662076580800FB45F0 /* AppDelegate.swift */,
 				46339A682076580800FB45F0 /* ViewController.swift */,
+				46B56E84208FC7A6007EECAE /* ViewController2.swift */,
+				467E8E9120922FA40079431F /* ViewController3.swift */,
+				4620CE3D2095112000FBCA18 /* ViewController4.swift */,
 				46339A6A2076580800FB45F0 /* Main.storyboard */,
+				46339A9620765AE100FB45F0 /* Main iPad.storyboard */,
+				46339A9420765AE100FB45F0 /* Main iPhone 8 Plus.storyboard */,
+				46339A9820765AE100FB45F0 /* Main iPhone 8.storyboard */,
 				46339A6D2076580900FB45F0 /* Assets.xcassets */,
 				46339A6F2076580900FB45F0 /* LaunchScreen.storyboard */,
 				46339A722076580900FB45F0 /* Info.plist */,
@@ -229,9 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46339A9A20765AE100FB45F0 /* Main iPhone 8 Plus.storyboard in Resources */,
+				467E8E9620923DCE0079431F /* compuestos.json in Resources */,
 				46339A712076580900FB45F0 /* LaunchScreen.storyboard in Resources */,
 				46339A6E2076580900FB45F0 /* Assets.xcassets in Resources */,
+				467E8E9520923DCE0079431F /* reacciones.json in Resources */,
+				46339A9C20765AE100FB45F0 /* Main iPhone 8.storyboard in Resources */,
 				46339A6C2076580800FB45F0 /* Main.storyboard in Resources */,
+				46339A9B20765AE100FB45F0 /* Main iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +287,9 @@
 			files = (
 				46339A692076580800FB45F0 /* ViewController.swift in Sources */,
 				46339A672076580800FB45F0 /* AppDelegate.swift in Sources */,
+				467E8E9220922FA40079431F /* ViewController3.swift in Sources */,
+				46B56E85208FC7A6007EECAE /* ViewController2.swift in Sources */,
+				4620CE3E2095112000FBCA18 /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +339,30 @@
 				46339A702076580900FB45F0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46339A9420765AE100FB45F0 /* Main iPhone 8 Plus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46339A9520765AE100FB45F0 /* Base */,
+			);
+			name = "Main iPhone 8 Plus.storyboard";
+			sourceTree = "<group>";
+		};
+		46339A9620765AE100FB45F0 /* Main iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46339A9720765AE100FB45F0 /* Base */,
+			);
+			name = "Main iPad.storyboard";
+			sourceTree = "<group>";
+		};
+		46339A9820765AE100FB45F0 /* Main iPhone 8.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46339A9920765AE100FB45F0 /* Base */,
+			);
+			name = "Main iPhone 8.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K7MB6WB24;
 				INFOPLIST_FILE = ReaccionesQuimicas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K7MB6WB24;
 				INFOPLIST_FILE = ReaccionesQuimicas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

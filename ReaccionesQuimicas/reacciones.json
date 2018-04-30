@@ -1,0 +1,63 @@
+ [
+  {
+  "NombreReaccion" : "Fermentacion",
+  "Componentes" : {
+  "Componente1" : "VaporDeAgua",
+  "Componente2" : "Agua",
+  "Componente3" : "Glucosa",
+  "Componente4" : "Fructosa"
+  },
+  "Informacion" : "Es un proceso catabólico de oxidación incompleta, totalmente anaeróbico, siendo el producto final un compuesto orgánico. Estos productos finales son los que caracterizan los diversos tipos de fermentaciones. El proceso de fermentación es anaeróbico ya que se produce en ausencia de oxígeno; ello significa que el aceptor final de los electrones del NADH producido en la glucólisis no es el oxígeno, sino un compuesto orgánico que se reducirá para poder reoxidar el NADH a NAD+. El compuesto orgánico que se reduce (acetaldehído, piruvato) es un derivado del sustrato que se ha oxidado anteriormente. Los tipos de fermentación que existen son: Alcohólica, Láctica, Acética y  Butírica.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Fermentación_alcohólica",
+  "Imagen" : "http://4.bp.blogspot.com/_jjYyBAB2xfg/TFNrpbuFDLI/AAAAAAAAAAc/D3LfWUsFXO0/s320/fermentacion+alcoholica+de+respiracion+celular.gif"
+  },
+  {
+  "NombreReaccion" : "Respiracion",
+  "Componentes" : {
+  "Componente1" : "Glucosa",
+  "Componente2" : "Oxigeno",
+  "Componente3" : "DioxidoDeCarbono",
+  "Componente4" : "VaporDeAgua"
+  },
+  "Informacion" : "Se llama respiración al proceso mediante el cual los seres vivos intercambian gases con el medio externo. Consiste en la entrada de oxígeno al cuerpo de un ser vivo (inhalación) y la salida de dióxido de carbono (exhalación) del mismo. Es indispensable para la vida de los organismos aeróbicos. Dependiendo del tipo de órgano encargado del proceso, la respiración puede ser pulmonar como en los mamíferos, traqueal en los artrópodos, branquial en los peces o cutánea en los anélidos. El intercambio puede producirse con el aire atmosférico como ocurre en las aves y mamíferos o tener lugar en el medio acuático que también contiene oxígeno y dióxido de carbono disuelto. C6 H12 O6 + 6O2 → 6CO2 + 6H2O + energía (ATP) Por lo tanto en el proceso de respiración celular una molécula de glucosa más 6 moléculas de oxígeno se transforman en 6 moléculas de dióxido de carbono y seis moléculas de agua liberando energía utilizable por la célula en forma de ATP.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Respiración",
+  "Imagen" : "http://4.bp.blogspot.com/_YeGO-Piwiyk/TGHyvId4N7I/AAAAAAAAABs/9-p7wn1aRGA/s1600/Ecuacion2.jpg"
+  },
+  {
+  "NombreReaccion" : "CombustibilidadGasolina",
+  "Componentes" : {
+  "Componente1" : "Octano",
+  "Componente2" : "Oxigeno",
+  "Componente3" : "DioxidoDeCarbono",
+  "Componente4" : "VaporDeAgua"
+  },
+  "Informacion" : "La combustión en un auto es muy diferente de las combustiones simples y continuas que se suceden en otro tipo de aparatos como las turbinas de gas. Es intermitente y se da bajo condiciones complejas y variables. La eficiencia de la combustión es muy sensible a la calidad del carburante y éste depende a su vez en forma estrecha de las condiciones de operación. Cuando la gasolina se mezcla con el oxígeno se producen reacciones aún antes de que la mezcla llegue a la cámara de combustión y persisten cuando se ha llevado a cabo y el frente de la llama avanza. Lógicamente esto determinará que el carburante se queme normalmente o dé pie a combustiones anormales como el cascabeleo o la preignición. C8H18(l) + 25/2 O2(g) ---------> 8 CO2(g) + 9 H2O(l)",
+  "Fuente" : "https://es.wikipedia.org/wiki/Gasolina",
+  "Imagen" : "http://www.bglat.com/img/octane2.png"
+  },
+  {
+  "NombreReaccion" : "CombustibilidadGasDeCocinaButano",
+  "Componentes" : {
+  "Componente1" : "Butano",
+  "Componente2" : "Oxigeno",
+  "Componente3" : "DioxidoDeCarbono",
+  "Componente4" : "VaporDeAgua",
+  "Imagen" : ""
+  },
+  "Informacion" : "Al reaccionar el butano, C4H10, con oxígeno, O2, se produce agua, H2O, dióxido de carbono, CO2, y calor, tanto calor que se esta reacción se emplea para calentar agua o cocinar. Se ha producido la combustión del butano, llamada así por la aparición de llamas: 2·C4H10 + 13·O2 -> 8·CO2 + 10·H2O",
+  "Fuente" : "https://es.wikipedia.org/wiki/Butano",
+  "Imagen" : "http://www.quimicafisica.com/sites/default/files/images/quimica-general/reacciones-quimicas/combustion-metano.png"
+  },
+  {
+  "NombreReaccion" : "CombustibilidadGasDeCocinaMetano",
+  "Componentes" : {
+  "Componente1" : "Metano",
+  "Componente2" : "Oxigeno",
+  "Componente3" : "DioxidoDeCarbono",
+  "Componente4" : "VaporDeAgua"
+  },
+  "Informacion" : "En la combustión del metano hay involucrados una serie de pasos. Se cree que el metano reacciona en primer lugar con el oxígeno para formar formaldehído (HCHO o H2CO). Acto seguido el formaldehído se descompone en el radical formil, que a continuación da dióxido de carbono e hidrógeno. Este proceso es conocido en su conjunto como pirólisis oxidativa. CH4 + 2O2 → CO2 + 2H2O Siguiendo la pirólisis oxidativa, el H2 se oxida formando H2O, desprendiendo calor. Este proceso es muy rápido, siendo su duración habitual inferior a un milisegundo. 2H2 + O2 → 2H2O Finalmente el CO se oxida, formando CO2 y liberando más calor. Este proceso generalmente es más lento que el resto de pasos, y requiere unos cuantos milisegundos para producir.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Metano",
+  "Imagen" : "http://aprendeenlinea.udea.edu.co/lms/ocw/file.php/8/Capitulo_IV/Cap4_3_Balanceo_de_ecuaciones_quimicas/imagenes/reaccion_metano_con_oxigeno.jpg"
+  }
+  ]

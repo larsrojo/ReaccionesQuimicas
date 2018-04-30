@@ -9,13 +9,19 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate  {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /***************************************************/
+        /**FUNCION PARA INICIALIZAR EL STORYBOARD CORRECTO**/
+        /***************************************************/
+        setStoryboard()
+        /***************************************************/
+        
         return true
     }
 
@@ -40,7 +46,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func grabStoryBoard() -> UIStoryboard
+    {
+        let screenheight : Int = Int(UIScreen.main.bounds.size.height)
+        
+        //print(screenheight)
+        
+        var storyboard : UIStoryboard
+        
+        switch (screenheight) {
+        case 667:
+            storyboard = UIStoryboard(name: "Main iPhone 8", bundle: nil)
+            break;
+        case 736:
+            storyboard = UIStoryboard(name: "Main iPhone 8 Plus", bundle: nil)
+            break;
+        case 1024:
+            storyboard = UIStoryboard(name: "Main iPad", bundle: nil)
+            break;
+        default:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break;
+        }
+        
+        return storyboard
+    }
+    
+    func setInitialScreen(_ storyboard : UIStoryboard) {
+        var initViewController : UIViewController
+        initViewController = storyboard.instantiateViewController(withIdentifier: "First")
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = initViewController
+        window?.makeKeyAndVisible()
+    }
+    
+    func setStoryboard() {
+        let storyboard : UIStoryboard = grabStoryBoard()
+        setInitialScreen(storyboard)
+    }
 }
-

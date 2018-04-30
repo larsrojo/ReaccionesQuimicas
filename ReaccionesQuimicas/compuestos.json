@@ -1,0 +1,110 @@
+ [
+  {
+  "NombreComponente" : "VaporDeAgua",
+  "ParrafoDeResumen" : "El vapor de agua es un gas que se obtiene por evaporación o ebullición del agua líquida o por sublimación del hielo. Es inodoro e incoloro. El vapor de agua es responsable de la humedad ambiental. En ciertas condiciones, a alta concentración, parte del agua que está en forma de vapor se condensa constituyendo gotas de agua líquida en suspensión, y así se forma la niebla o, a alturas mayores sobre el suelo, nubes. Podemos también apreciar el vapor de agua en nuestra exhalación en climas fríos y con alta humedad.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Vapor_de_agua",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/H2O_2D_labelled.svg/800px-H2O_2D_labelled.svg.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "100 °C (373 K)",
+  "PuntoDeFusion" : "0 °C (273 K)",
+  "Densidad" : "1000 kg/m3; 1 g/cm3",
+  "FormulaMolecular" : "H2O"
+  }
+  },
+  {
+  "NombreComponente" : "Butano",
+  "ParrafoDeResumen" : "Párrafo de resumen: El butano, también llamado n-butano, es un hidrocarburo saturado, parafínico o alifático, inflamable, gaseoso que se licúa a presión atmosférica a -0,5 °C, formado por cuatro átomos de carbono y por diez de hidrógeno. Como es un gas incoloro e inodoro, en su elaboración se le añade un odorizante (generalmente un mercaptano) que le confiere olor desagradable. Esto le permite ser detectado en una fuga, porque es altamente volátil y puede provocar una explosión. El butano comercial es un gas licuado, obtenido por destilación del petróleo, compuesto principalmente por butano normal (60%), propano (9%), isobutano (30%) y etano (1%). La principal aplicación del gas butano (C4H10) es como combustible en hogares para la cocina y agua caliente, y en los encendedores de gas. No suele consumirse en grandes cantidades debido a sus limitaciones de transporte y almacenaje. Aunque también se emplea como combustible para encendedores de bolsillo.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Butano",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Butan_Lewis.svg/222px-Butan_Lewis.svg.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "272,7 K (-0 °C)",
+  "PuntoDeFusion" : "134,9 K (-138 °C)",
+  "Densidad" : "2.52 kg/m3; 0.00252 g/cm3",
+  "FormulaMolecular" : "C4H10"
+  }
+  },
+  {
+  "NombreComponente" : "DioxidoDeCarbono",
+  "ParrafoDeResumen" : "El dióxido de carbono (fórmula química CO2) es un gas incoloro y vital para la vida en la Tierra. Este compuesto químico se encuentra en la naturaleza y está compuesto de un átomo de carbono unido con enlaces covalentes dobles a dos átomos de oxígeno. El CO2 existe en la atmósfera de la Tierra como gas traza a una concentración de alrededor de 0,04 % (400 ppm) en volumen.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Di%C3%B3xido_de_carbono",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Carbon-dioxide-2D-dimensions.svg/740px-Carbon-dioxide-2D-dimensions.svg.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "216 K (-57 °C)",
+  "PuntoDeFusion" : "194,7 K (-78 °C)",
+  "Densidad" : "1,842 kg/m3; 0,001842 g/cm3",
+  "FormulaMolecular" : "CO2"
+  }
+  },
+  {
+  "NombreComponente" : "Fructosa",
+  "ParrafoDeResumen" : "La fructosa es una forma de azúcar encontrada en los vegetales, las frutas y la miel. Es un monosacárido con la misma fórmula empírica que la glucosa pero con diferente estructura, es decir, es un isómero de ésta. Es una cetohexosa (6 átomos de carbono y un grupo cetona), y por ello cicla en furano (al contrario que las aldohexosas, que lo hacen en pirano). Su poder energético es de 4 kilocalorías por cada gramo.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Fructosa",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/f/fb/D-fructose_CASCC.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "440 °C",
+  "PuntoDeFusion" : "376,15 K (103 °C)",
+  "Densidad" : "1.69 g/cm³",
+  "FormulaMolecular" : "C6H12O6"
+  }
+  },
+  {
+  "NombreComponente" : "Glucosa",
+  "ParrafoDeResumen" : "La glucosa es un monosacárido con fórmula molecular C6H12O6. La glucosa, libre o combinada, es el compuesto orgánico más abundante de la naturaleza. Es la fuente primaria de síntesis de energía de las células, mediante su oxidación catabólica, y es el componente principal de polímeros de importancia estructural como la celulosa y de polímeros de almacenamiento energético como el almidón y el glucógeno.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Glucosa",
+  "Imagen" : "https://es.wikipedia.org/wiki/Glucosa#/media/File:Alpha-D-Glucopyranose.svg",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "N/A",
+  "PuntoDeFusion" : "146 °C",
+  "Densidad" : "1540 kg/m3; 1,54 g/cm3",
+  "FormulaMolecular" : "C6H12O6"
+  }
+  },
+  {
+  "NombreComponente" : "Octano",
+  "ParrafoDeResumen" : "El octano (o n-octano) es un hidrocarburo alcano lineal de 8 átomos de carbono, de fórmula C8H18, y tiene varios isómeros que en ocasiones son llamados de la misma forma. Es una molécula orgánica. El isómero de más importancia es el 2,2,4-Trimetilpentano (isooctano) porque fue seleccionado como punto de referencia 100 para la escala del octanaje, en la que el heptano tiene el punto de referencia 0. Puede verse una lista completa de los isómeros del octano en la página de desambiguación.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Octano",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Octane_vector.svg/538px-Octane_vector.svg.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "398,7 K (126 °C)",
+  "PuntoDeFusion" : "-57 °C",
+  "Densidad" : "703 kg/m3; 0.703 g/cm3",
+  "FormulaMolecular" : "C8H18"
+  }
+  },
+  {
+  "NombreComponente" : "Oxigeno",
+  "ParrafoDeResumen" : "El oxígeno es un elemento químico de número atómico 8 y representado por el símbolo O. Dado que constituye la mayor parte de la masa del agua, es también el componente mayoritario de la masa de los seres vivos. Muchas de las moléculas más importantes que forman parte de los seres vivos, como las proteínas, los ácidos nucleicos, los carbohidratos y los lípidos, contienen oxígeno, así como los principales compuestos inorgánicos que forman los caparazones, dientes y huesos animales.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Ox%C3%ADgeno",
+  "Imagen" : "http://1.bp.blogspot.com/-EScWQAl2tcA/UnTnFmpBV9I/AAAAAAAANEM/uq2Qy-7QGXk/s1600/molécula-estructura-qu%C3%ADmica-oxigeno.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "90,18 K (-183 °C)",
+  "PuntoDeFusion" : "50,35 K (-223 °C)",
+  "Densidad" : "1,429 kg/m3",
+  "FormulaMolecular" : "O2"
+  }
+  },
+  {
+  "NombreComponente" : "Sacarosa",
+  "ParrafoDeResumen" : "La sacarosa, azúcar común o azúcar de mesa es un disacárido formado por alfa-glucopiranosa y beta-fructofuranosa. El azúcar de mesa es el edulcorante más utilizado para endulzar los alimentos y suele ser sacarosa. En la naturaleza se encuentra en un 20 % del peso en la caña de azúcar y en un 15 % del peso de la remolacha azucarera, de las que se obtiene el azúcar de mesa. La miel también es un fluido que contiene gran cantidad de sacarosa parcialmente hidrolizada.",
+  "Fuente" : "https://es.wikipedia.org/wiki/Sacarosa",
+  "Imagen" : "https://es.wikipedia.org/wiki/Sacarosa#/media/File:Saccharose2.svg",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "N/A",
+  "PuntoDeFusion" : "459 K (186 °C)",
+  "Densidad" : "1587 kg/m3; 1.587 g/cm3",
+  "FormulaMolecular" : "C12H22O11"
+  }
+  },
+  {
+  "NombreComponente" : "Metano",
+  "ParrafoDeResumen" : "El metano es el hidrocarburo alcano más sencillo. En la naturaleza se produce como producto final de la putrefacción anaeróbica de las plantas. El gas natural comercializado es mayoritariamente metano con algunos otro hidrocarburos añadidos en pequeña proporción, como propano, metano, butano y algo de nitrógeno. El metano es un gas de efecto invernadero relativamente potente que contribuye al calentamiento global del planeta Tierra. El metano es importante para la generación eléctrica ya que se emplea como combustible en las turbinas de gas o en generadores de vapor. El metano es utilizado en procesos químicos industriales y puede ser transportado como líquido refrigerado (gas natural licuado, o GNL).",
+  "Fuente" : "https://es.wikipedia.org/wiki/Metano",
+  "Imagen" : "https://upload.wikimedia.org/wikipedia/commons/9/94/Methane-CRC-MW-dimensions-2D.png",
+  "DatosPrincipales" : {
+  "PuntoDeEbullicion" : "111,55 K (-162 °C)",
+  "PuntoDeFusion" : "90,6 K (-183 °C)",
+  "Densidad" : "0.656 kg/m3; 0,000656 g/cm3",
+  "FormulaMolecular" : "CH4"
+  }
+  }
+]
