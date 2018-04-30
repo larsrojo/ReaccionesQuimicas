@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController4.swift
 //  ReaccionesQuimicas
 //
@@ -44,7 +44,7 @@ class ViewController4: UIViewController {
         let ParrafoDeResumen : String;
         let Fuente : String;
         let Imagen : String;
-        let DatosPrincipales = [String : String]();
+        var DatosPrincipales = [String : String]();
     }
     
     var componentes = [Componente]()
@@ -74,6 +74,31 @@ class ViewController4: UIViewController {
         }
     }
     
+    func traducirElementosParaBoton(elemento : String) -> String {
+        switch elemento {
+        case "Agua":
+            return "agua";
+        case "Butano":
+            return "butano";
+        case "DioxidoDeCarbono":
+            return "dióxido de carbono"
+        case "Fructosa":
+            return "fructosa";
+        case "Glucosa":
+            return "glucosa";
+        case "Metano":
+            return "metano"
+        case "Octano":
+            return "octano";
+        case "Oxigeno":
+            return "oxígeno"
+        case "VaporDeAgua":
+            return "vapor de agua";
+        default:
+            return "elemento None";
+        }
+    }
+    
     func cargarJSON(){
         let path = Bundle.main.path(forResource: "compuestos", ofType: "json");
         let url = URL(fileURLWithPath: path!)
@@ -88,18 +113,15 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
-                    /*
-                    print(componente.DatosPrincipales["PuntoDeEbullicion"]);
-                    print(componente.DatosPrincipales["PuntoDeFusion"]);
-                    print(componente.DatosPrincipales["Densidad"]);
-                    print(componente.DatosPrincipales["FormulaMolecular"]);
-                     */
-                    dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"];
-                    dp2PuntoFusion.text      = componente.DatosPrincipales["PuntoDeFusion"];
-                    dp3Densidad.text         = componente.DatosPrincipales["Densidad"];
-                    dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"];
+                    
+                    
+                    
+                    dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
+                    dp2PuntoFusion.text      = componente.DatosPrincipales["PuntoDeFusion"]!;
+                    dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
+                    dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
@@ -112,7 +134,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -131,7 +153,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -150,7 +172,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -169,7 +191,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -188,7 +210,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -207,7 +229,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -226,7 +248,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -245,7 +267,7 @@ class ViewController4: UIViewController {
                     informacionComponente.text = componente.ParrafoDeResumen;
                     
                     informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementos(elemento: componenteRecibido);
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
@@ -265,6 +287,15 @@ class ViewController4: UIViewController {
         } catch let error {
             print(error as? Any)
             print("error")
+        }
+    }
+    
+    @IBAction func accionVerInformacionAdicional(_ sender: UIButton) {
+        if let url = URL(string: informacionAdicional) {
+            print("Se abrió safari");
+            UIApplication.shared.open(url, options: [:])
+        }else{
+            print("No se abrió safari");
         }
     }
     

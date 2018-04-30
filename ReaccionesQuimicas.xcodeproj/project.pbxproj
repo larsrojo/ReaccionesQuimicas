@@ -21,6 +21,7 @@
 		467E8E9220922FA40079431F /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467E8E9120922FA40079431F /* ViewController3.swift */; };
 		467E8E9520923DCE0079431F /* reacciones.json in Resources */ = {isa = PBXBuildFile; fileRef = 467E8E9320923DCD0079431F /* reacciones.json */; };
 		467E8E9620923DCE0079431F /* compuestos.json in Resources */ = {isa = PBXBuildFile; fileRef = 467E8E9420923DCD0079431F /* compuestos.json */; };
+		46A7CF892096CBBD00559822 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7CF882096CBBD00559822 /* ViewController5.swift */; };
 		46B56E85208FC7A6007EECAE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B56E84208FC7A6007EECAE /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		467E8E9120922FA40079431F /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		467E8E9320923DCD0079431F /* reacciones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reacciones.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		467E8E9420923DCD0079431F /* compuestos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = compuestos.json; sourceTree = "<group>"; };
+		46A7CF882096CBBD00559822 /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
 		46B56E84208FC7A6007EECAE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				46B56E84208FC7A6007EECAE /* ViewController2.swift */,
 				467E8E9120922FA40079431F /* ViewController3.swift */,
 				4620CE3D2095112000FBCA18 /* ViewController4.swift */,
+				46A7CF882096CBBD00559822 /* ViewController5.swift */,
 				46339A6A2076580800FB45F0 /* Main.storyboard */,
 				46339A9620765AE100FB45F0 /* Main iPad.storyboard */,
 				46339A9420765AE100FB45F0 /* Main iPhone 8 Plus.storyboard */,
@@ -289,6 +292,7 @@
 				46339A672076580800FB45F0 /* AppDelegate.swift in Sources */,
 				467E8E9220922FA40079431F /* ViewController3.swift in Sources */,
 				46B56E85208FC7A6007EECAE /* ViewController2.swift in Sources */,
+				46A7CF892096CBBD00559822 /* ViewController5.swift in Sources */,
 				4620CE3E2095112000FBCA18 /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

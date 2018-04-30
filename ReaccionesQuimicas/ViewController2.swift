@@ -25,6 +25,7 @@ class ViewController2: UIViewController {
         let Fuente : String;
         let Imagen : String;
     }
+    
     /*
      NombreReaccion
      Componentes
@@ -36,9 +37,9 @@ class ViewController2: UIViewController {
     
     var reaccionRecibida = "";
     
-    /*-----------------------------------------------------------*/
-    /*---------COMPONENTES PARA LA INFORMACIÓN DEL JSON----------*/
-    /*-----------------------------------------------------------*/
+    /*-------------------------------------------------------------------*/
+    /*---------COMPONENTES PARA LA INFORMACIÓN DEL ARCHIVO JSON----------*/
+    /*-------------------------------------------------------------------*/
     //Imágen de la reacción
     @IBOutlet weak var imagenDeLaReaccion: UIImageView!
     
@@ -80,15 +81,19 @@ class ViewController2: UIViewController {
         if(reaccionRecibida == "Fermentacion"){
             //labelTituloReaccion.text = "Fermentación del alcohol";
             self.title = "Fermentación del alcohol";
+            botonIformacionAdicional.setTitle("Ver más sobre fermentación alcohólica", for: .normal);
         }else if(reaccionRecibida == "Respiracion"){
             //labelTituloReaccion.text = "Respiración humana";
             self.title = "Respiración humana";
+            botonIformacionAdicional.setTitle("Ver más sobre respiración humana", for: .normal);
         }else if(reaccionRecibida == "CombustibilidadGasolina"){
             //labelTituloReaccion.text = "Combustión de la gasolina";
             self.title = "Combustión de la gasolina";
+            botonIformacionAdicional.setTitle("Ver más sobre combustión de la gasolina", for: .normal);
         }else if(reaccionRecibida == "CombustibilidadGasDeCocinaButano"){
             //labelTituloReaccion.text = "Combustión de gas de cocina";
             self.title = "Combustión de gas de cocina";
+            botonIformacionAdicional.setTitle("Ver más sobre gas de cocina butano", for: .normal);
         }
     }
     
@@ -120,9 +125,15 @@ class ViewController2: UIViewController {
             
             for reaccionIndividual in reacciones{
                 //print(reaccionRecibida)
-                
+                /*
+                print("---------------");
+                print(reaccionRecibida);
+                print(reaccionIndividual.NombreReaccion);
+                print("---------------");
+                */
                 if (reaccionRecibida == reaccionIndividual.NombreReaccion){
-                    
+                    //print("Matched");
+                    //print("---------------");
                     elemento1 = reaccionIndividual.Componentes["Componente1"]!;
                     elemento2 = reaccionIndividual.Componentes["Componente2"]!;
                     elemento3 = reaccionIndividual.Componentes["Componente3"]!;
@@ -145,7 +156,10 @@ class ViewController2: UIViewController {
                     informacionAdicional = reaccionIndividual.Fuente;
                     //print(informacionAdicional);
                     
-                    botonIformacionAdicional.setTitle("Ver más sobre fermentación alcohólica", for: .normal);
+                    //print("Ver más sobre fermentación alcohólica");
+                    
+                    //botonIformacionAdicional.setTitle("1", for: .normal);
+                    //botonIformacionAdicional.setTitle("Ver más sobre fermentación alcohólica", for: .normal);
                     
                     //reaccionIndividual.Imagen
                     
@@ -159,7 +173,8 @@ class ViewController2: UIViewController {
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
-                    
+                    //print("Matched");
+                    //print("---------------");
                     elemento1 = reaccionIndividual.Componentes["Componente1"]!;
                     elemento2 = reaccionIndividual.Componentes["Componente2"]!;
                     elemento3 = reaccionIndividual.Componentes["Componente3"]!;
@@ -176,7 +191,10 @@ class ViewController2: UIViewController {
                     //print(informacionAdicional);
                     
                     //botonIformacionAdicional.text = "Ver más sobre respiración humana";
-                    botonIformacionAdicional.setTitle("Ver más sobre respiración humana", for: .normal);
+                    //print("Ver más sobre respiración humana");
+                    
+                    //botonIformacionAdicional.setTitle("2", for: .normal);
+                    //botonIformacionAdicional.setTitle("Ver más sobre respiración humana", for: .normal);
                     
                     let imageUrlString = reaccionIndividual.Imagen
                     let imageUrl = URL(string: imageUrlString)!
@@ -186,7 +204,8 @@ class ViewController2: UIViewController {
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
-                    
+                    //print("Matched");
+                    //print("---------------");
                     elemento1 = reaccionIndividual.Componentes["Componente1"]!;
                     elemento2 = reaccionIndividual.Componentes["Componente2"]!;
                     elemento3 = reaccionIndividual.Componentes["Componente3"]!;
@@ -202,8 +221,11 @@ class ViewController2: UIViewController {
                     informacionAdicional = reaccionIndividual.Fuente;
                     //print(informacionAdicional);
                     
+                    //print("Ver más sobre combustión de la gasolina");
                     //botonIformacionAdicional.text = "Ver más sobre combustión de la gasolina";
-                    botonIformacionAdicional.setTitle("Ver más sobre combustión de la gasolina", for: .normal);
+                    
+                    //botonIformacionAdicional.setTitle("3", for: .normal);
+                    //botonIformacionAdicional.setTitle("Ver más sobre combustión de la gasolina", for: .normal);
                     
                     let imageUrlString = reaccionIndividual.Imagen
                     let imageUrl = URL(string: imageUrlString)!
@@ -213,7 +235,8 @@ class ViewController2: UIViewController {
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
-                    
+                    //print("Matched");
+                    //print("---------------");
                     elemento1 = reaccionIndividual.Componentes["Componente1"]!;
                     elemento2 = reaccionIndividual.Componentes["Componente2"]!;
                     elemento3 = reaccionIndividual.Componentes["Componente3"]!;
@@ -226,11 +249,14 @@ class ViewController2: UIViewController {
                     
                     textViewInformacionDeLaReaccion.text = reaccionIndividual.Informacion;
                     
-                    informacionAdicional = reaccionIndividual.Fuente;
+                    //informacionAdicional = reaccionIndividual.Fuente;
                     //print(informacionAdicional);
                     
+                    //print("Ver más sobre gas de cocina butano");
                     //botonIformacionAdicional.text = "Ver más sobre gas de cocina butano";
-                    botonIformacionAdicional.setTitle("Ver más sobre gas de cocina butano", for: .normal);
+                    
+                    //botonIformacionAdicional.setTitle("4", for: .normal);
+                    //botonIformacionAdicional.setTitle("Ver más sobre gas de cocina butano", for: .normal);
                     
                     let imageUrlString = reaccionIndividual.Imagen
                     let imageUrl = URL(string: imageUrlString)!
@@ -240,7 +266,8 @@ class ViewController2: UIViewController {
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
-                    
+                    //print("Matched");
+                    //print("---------------");
                     elemento1 = reaccionIndividual.Componentes["Componente1"]!;
                     elemento2 = reaccionIndividual.Componentes["Componente2"]!;
                     elemento3 = reaccionIndividual.Componentes["Componente3"]!;
@@ -256,8 +283,11 @@ class ViewController2: UIViewController {
                     informacionAdicional = reaccionIndividual.Fuente;
                     //print(informacionAdicional);
                     
+                    //print("Ver más sobre gas de cocina metano");
                     //botonIformacionAdicional.text = "Ver más sobre gas de cocina metano";
-                    botonIformacionAdicional.setTitle("Ver más sobre gas de cocina metano", for: .normal);
+                    
+                    //botonIformacionAdicional.setTitle("5", for: .normal);
+                    //botonIformacionAdicional.setTitle("Ver más sobre gas de cocina metano", for: .normal);
                     
                     let imageUrlString = reaccionIndividual.Imagen
                     let imageUrl = URL(string: imageUrlString)!
@@ -336,8 +366,13 @@ class ViewController2: UIViewController {
     @IBAction func botonInformacionAdicionalPresionado(_ sender: UIButton) {
         //botonIformacionAdicional.setTitle("Presionado", for: .normal);
         
+        //print(informacionAdicional);
+        
         if let url = URL(string: informacionAdicional) {
+            print("Se abrió safari");
             UIApplication.shared.open(url, options: [:])
+        }else{
+            print("No se abrió safari");
         }
         
     }
