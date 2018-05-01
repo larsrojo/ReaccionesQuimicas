@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SceneKit
 
 class ViewController: UIViewController {
     
@@ -16,7 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var botonGasolina: UIButton!
     @IBOutlet weak var botonGasCocina: UIButton!
     
-    @IBOutlet weak var viewOxigeno: UIImageView!
+    //@IBOutlet weak var viewOxigeno: UIImageView!
+    
+    @IBOutlet weak var modeloOxigeno: SCNView!
+    
+    var elementoParaEnviar = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +38,14 @@ class ViewController: UIViewController {
     
     //  Función para cargar la imágen del oxígeno
     func cargarOxigeno(){
+        /*
         let imageUrlString = "https://st.depositphotos.com/1711722/5128/i/950/depositphotos_51289779-stock-photo-oxygen-o2-molecular-structure-isolated.jpg";
         let imageUrl = URL(string: imageUrlString)!
         let imageData = try! Data(contentsOf: imageUrl)
         let imagenTemporal = UIImage(data: imageData)
         viewOxigeno.image = imagenTemporal
+         */
+        
     }
     
     func alertaReaccionCreada(reaccionRecibida : String) {
@@ -97,6 +105,9 @@ class ViewController: UIViewController {
             //alertaReaccionCreada(reaccionRecibida: "CombustibilidadGasDeCocinaButano");
             let vistaReacciones = segue.destination as! ViewController2;
             vistaReacciones.reaccionRecibida = "CombustibilidadGasDeCocinaButano";
+        }else if(segue.identifier == "principal"){
+            let vistaRealidadAumentada = segue.destination as! ViewController5;
+            vistaRealidadAumentada.elementoRecibido = "Oxigeno";
         }
         
      }

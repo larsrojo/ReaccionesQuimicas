@@ -2,6 +2,33 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Butano.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/DioxidoDeCarbono.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Fructuosa.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Glucosa.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Metano.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Octano.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Oxigeno.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/Sacarosa.dae">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/lars/Desktop/ReaccionesQuimicas/ReaccionesQuimicas/VaporDeAgua.dae">
+   </FileRef>
+   <FileRef
       location = "self:ReaccionesQuimicas.xcodeproj">
    </FileRef>
 </Workspace>

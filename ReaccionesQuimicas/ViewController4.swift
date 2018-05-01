@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import SceneKit
 
 class ViewController4: UIViewController {
 
     //  Nombre del componente
     var componenteRecibido = "";
+    
     //  Imágen del componente
-    @IBOutlet weak var imagenComponente: UIImageView!
+    //@IBOutlet weak var imagenComponente: UIImageView!
+    //  Ahora será un modelo
+    
+    @IBOutlet weak var modeloElemento: SCNView!
+    
     //  Información del componente
     @IBOutlet weak var informacionComponente: UITextView!
     //  Botón de información adicional del componente
@@ -52,22 +58,44 @@ class ViewController4: UIViewController {
     func traducirElementos(elemento : String) -> String {
         switch elemento {
         case "Agua":
+            let scene1 = SCNScene(named: "VaporDeAgua.dae")!
+            modeloElemento.scene = scene1;
             return "Agua";
         case "Butano":
+            let scene1 = SCNScene(named: "Butano.dae")!
+            modeloElemento.scene = scene1;
             return "Butano";
         case "DioxidoDeCarbono":
+            let scene1 = SCNScene(named: "DioxidoDeCarbono.dae")!
+            modeloElemento.scene = scene1;
             return "Dióxido de Carbono"
-        case "Fructosa":
-            return "Fructosa";
+        case "Fructuosa":
+            let scene1 = SCNScene(named: "Fructuosa.dae")!
+            modeloElemento.scene = scene1;
+            return "Fructuosa";
         case "Glucosa":
+            let scene1 = SCNScene(named: "Glucosa.dae")!
+            modeloElemento.scene = scene1;
             return "Glucosa";
         case "Metano":
+            let scene1 = SCNScene(named: "Metano.dae")!
+            modeloElemento.scene = scene1;
             return "Metano"
+        case "Sacarosa":
+            let scene1 = SCNScene(named: "Sacarosa.dae")!
+            modeloElemento.scene = scene1;
+            return "Sacarosa"
         case "Octano":
+            let scene1 = SCNScene(named: "Octano.dae")!
+            modeloElemento.scene = scene1;
             return "Octano";
         case "Oxigeno":
+            let scene1 = SCNScene(named: "Oxigeno.dae")!
+            modeloElemento.scene = scene1;
             return "Oxígeno"
         case "VaporDeAgua":
+            let scene1 = SCNScene(named: "VaporDeAgua.dae")!
+            modeloElemento.scene = scene1;
             return "Vapor de agua";
         default:
             return "Elemento None";
@@ -82,12 +110,14 @@ class ViewController4: UIViewController {
             return "butano";
         case "DioxidoDeCarbono":
             return "dióxido de carbono"
-        case "Fructosa":
-            return "fructosa";
+        case "Fructuosa":
+            return "fructuosa";
         case "Glucosa":
             return "glucosa";
         case "Metano":
             return "metano"
+        case "Sacarosa":
+            return "Sacarosa";
         case "Octano":
             return "octano";
         case "Oxigeno":
@@ -116,18 +146,24 @@ class ViewController4: UIViewController {
                     let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
                     botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
                     
-                    
-                    
                     dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
                     dp2PuntoFusion.text      = componente.DatosPrincipales["PuntoDeFusion"]!;
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //VaporDeAgua
+                    /*
+                    let scene1 = SCNScene(named: "VaporDeAgua.dae")!
+                    modeloElemento.scene = scene1;
+                    */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -142,11 +178,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Butano
+                    /*
+                    let scene1 = SCNScene(named: "Butano.dae")!
+                    modeloElemento.scene = scene1;
+                    */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -161,11 +205,45 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //DioxidoDeCarbono
+                    /*
+                    let scene1 = SCNScene(named: "DioxidoDeCarbono.dae")!
+                    modeloElemento.scene = scene1;
+                    */
+                }else if(componenteRecibido == componente.NombreComponente){
+                    
+                    informacionComponente.text = componente.ParrafoDeResumen;
+                    
+                    informacionAdicional = componente.Fuente;
+                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
+                    botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
+                    
+                    dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
+                    dp2PuntoFusion.text      = componente.DatosPrincipales["PuntoDeFusion"]!;
+                    dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
+                    dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
+                    
+                    /*
+                    let imageUrlString = componente.Imagen
+                    let imageUrl = URL(string: imageUrlString)!
+                    let imageData = try! Data(contentsOf: imageUrl)
+                    let imagenTemporal = UIImage(data: imageData)
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Fructuosa
+                    /*
+                    let scene1 = SCNScene(named: "Fructuosa.dae")!
+                    modeloElemento.scene = scene1;
+                    */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -180,11 +258,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Glucosa
+                    /*
+                    let scene1 = SCNScene(named: "Glucosa.dae")!
+                    modeloElemento.scene = scene1;
+                    */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -199,11 +285,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Octano
+                    /*
+                    let scene1 = SCNScene(named: "Octano.dae")!
+                    modeloElemento.scene = scene1;
+                     */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -218,11 +312,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Oxigeno
+                    /*
+                    let scene1 = SCNScene(named: "Oxigeno.dae")!
+                    modeloElemento.scene = scene1;
+                     */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -237,11 +339,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
+                    
+                    //imagenComponente.image = imagenTemporal
+                    //Sacarosa
+                    /*
+                    let scene1 = SCNScene(named: "Sacarosa.dae")!
+                    modeloElemento.scene = scene1;
+                    */
                     
                 }else if(componenteRecibido == componente.NombreComponente){
                     
@@ -256,31 +366,19 @@ class ViewController4: UIViewController {
                     dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
                     dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
                     
+                    /*
                     let imageUrlString = componente.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
+                    */
                     
-                }else if(componenteRecibido == componente.NombreComponente){
-                    
-                    informacionComponente.text = componente.ParrafoDeResumen;
-                    
-                    informacionAdicional = componente.Fuente;
-                    let temporal = traducirElementosParaBoton(elemento: componenteRecibido);
-                    botonInformacionAdicional.setTitle("Ver mas sobre " + temporal, for: .normal)
-                    
-                    dt1PuntoEbullicion.text  = componente.DatosPrincipales["PuntoDeEbullicion"]!;
-                    dp2PuntoFusion.text      = componente.DatosPrincipales["PuntoDeFusion"]!;
-                    dp3Densidad.text         = componente.DatosPrincipales["Densidad"]!;
-                    dp4FormulaMolecular.text = componente.DatosPrincipales["FormulaMolecular"]!;
-                    
-                    let imageUrlString = componente.Imagen
-                    let imageUrl = URL(string: imageUrlString)!
-                    let imageData = try! Data(contentsOf: imageUrl)
-                    let imagenTemporal = UIImage(data: imageData)
-                    imagenComponente.image = imagenTemporal
-                    
+                    //imagenComponente.image = imagenTemporal
+                    //Metano
+                    /*
+                    let scene1 = SCNScene(named: "Metano.dae")!
+                    modeloElemento.scene = scene1;
+                     */
                 }
             }
             
@@ -299,14 +397,17 @@ class ViewController4: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if(segue.identifier == "terciario"){
+            let vistaComponente = segue.destination as! ViewController5;
+            vistaComponente.elementoRecibido = componenteRecibido;
+        }
     }
-    */
-
+    
 }

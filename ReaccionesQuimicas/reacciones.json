@@ -2,10 +2,10 @@
   {
   "NombreReaccion" : "Fermentacion",
   "Componentes" : {
-  "Componente1" : "VaporDeAgua",
-  "Componente2" : "Agua",
+  "Componente1" : "Sacarosa",
+  "Componente2" : "VaporDeAgua",
   "Componente3" : "Glucosa",
-  "Componente4" : "Fructosa"
+  "Componente4" : "Fructuosa"
   },
   "Informacion" : "Es un proceso catabólico de oxidación incompleta, totalmente anaeróbico, siendo el producto final un compuesto orgánico. Estos productos finales son los que caracterizan los diversos tipos de fermentaciones. El proceso de fermentación es anaeróbico ya que se produce en ausencia de oxígeno; ello significa que el aceptor final de los electrones del NADH producido en la glucólisis no es el oxígeno, sino un compuesto orgánico que se reducirá para poder reoxidar el NADH a NAD+. El compuesto orgánico que se reduce (acetaldehído, piruvato) es un derivado del sustrato que se ha oxidado anteriormente. Los tipos de fermentación que existen son: Alcohólica, Láctica, Acética y  Butírica.",
   "Fuente" : "http://www.garciacarrion.es/es/vinos-garcia-carrion/pregunta-al-enologo/que-es-la-fermentacion-alcoholica",

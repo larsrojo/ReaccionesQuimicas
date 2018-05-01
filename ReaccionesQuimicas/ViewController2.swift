@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import SceneKit
 
 class ViewController2: UIViewController {
     
@@ -41,7 +42,11 @@ class ViewController2: UIViewController {
     /*---------COMPONENTES PARA LA INFORMACIÓN DEL ARCHIVO JSON----------*/
     /*-------------------------------------------------------------------*/
     //Imágen de la reacción
-    @IBOutlet weak var imagenDeLaReaccion: UIImageView!
+    //@IBOutlet weak var imagenDeLaReaccion: UIImageView!
+    
+    //Modelo de la reacción
+    @IBOutlet weak var modeloReaccion: SCNView!
+    @IBOutlet weak var modeloReaccion2: SCNView!
     
     //Componentes de la reacción
     /*
@@ -82,18 +87,45 @@ class ViewController2: UIViewController {
             //labelTituloReaccion.text = "Fermentación del alcohol";
             self.title = "Fermentación del alcohol";
             botonIformacionAdicional.setTitle("Ver más sobre fermentación alcohólica", for: .normal);
+            
+            let scene1 = SCNScene(named: "Glucosa.dae")!
+            let scene2 = SCNScene(named: "Fructuosa.dae")!
+            
+            modeloReaccion.scene = scene1;
+            modeloReaccion2.scene = scene2;
+            
         }else if(reaccionRecibida == "Respiracion"){
             //labelTituloReaccion.text = "Respiración humana";
             self.title = "Respiración humana";
             botonIformacionAdicional.setTitle("Ver más sobre respiración humana", for: .normal);
+            
+            let scene1 = SCNScene(named: "DioxidoDeCarbono.dae")!
+            let scene2 = SCNScene(named: "VaporDeAgua.dae")!
+            
+            modeloReaccion.scene = scene1;
+            modeloReaccion2.scene = scene2;
+            
         }else if(reaccionRecibida == "CombustibilidadGasolina"){
             //labelTituloReaccion.text = "Combustión de la gasolina";
             self.title = "Combustión de la gasolina";
             botonIformacionAdicional.setTitle("Ver más sobre combustión de la gasolina", for: .normal);
+            
+            let scene1 = SCNScene(named: "DioxidoDeCarbono.dae")!
+            let scene2 = SCNScene(named: "VaporDeAgua.dae")!
+            
+            modeloReaccion.scene = scene1;
+            modeloReaccion2.scene = scene2;
+            
         }else if(reaccionRecibida == "CombustibilidadGasDeCocinaButano"){
             //labelTituloReaccion.text = "Combustión de gas de cocina";
             self.title = "Combustión de gas de cocina";
             botonIformacionAdicional.setTitle("Ver más sobre gas de cocina butano", for: .normal);
+            
+            let scene1 = SCNScene(named: "DioxidoDeCarbono.dae")!
+            let scene2 = SCNScene(named: "VaporDeAgua.dae")!
+            
+            modeloReaccion.scene = scene1;
+            modeloReaccion2.scene = scene2;
         }
     }
     
@@ -163,12 +195,14 @@ class ViewController2: UIViewController {
                     
                     //reaccionIndividual.Imagen
                     
+                    //Ya noy hay imágenes, ahora son modelos
+                    /*
                     let imageUrlString = reaccionIndividual.Imagen
                     let imageUrl = URL(string: imageUrlString)!
                     let imageData = try! Data(contentsOf: imageUrl)
                     let imagenTemporal = UIImage(data: imageData)
                     imagenDeLaReaccion.image = imagenTemporal
-                    
+                    */
                     //imagenDeLaReaccion
                     
                     break;
@@ -196,11 +230,14 @@ class ViewController2: UIViewController {
                     //botonIformacionAdicional.setTitle("2", for: .normal);
                     //botonIformacionAdicional.setTitle("Ver más sobre respiración humana", for: .normal);
                     
-                    let imageUrlString = reaccionIndividual.Imagen
-                    let imageUrl = URL(string: imageUrlString)!
-                    let imageData = try! Data(contentsOf: imageUrl)
-                    let imagenTemporal = UIImage(data: imageData)
-                    imagenDeLaReaccion.image = imagenTemporal
+                    //Ya noy hay imágenes, ahora son modelos
+                    /*
+                     let imageUrlString = reaccionIndividual.Imagen
+                     let imageUrl = URL(string: imageUrlString)!
+                     let imageData = try! Data(contentsOf: imageUrl)
+                     let imagenTemporal = UIImage(data: imageData)
+                     imagenDeLaReaccion.image = imagenTemporal
+                     */
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
@@ -227,11 +264,14 @@ class ViewController2: UIViewController {
                     //botonIformacionAdicional.setTitle("3", for: .normal);
                     //botonIformacionAdicional.setTitle("Ver más sobre combustión de la gasolina", for: .normal);
                     
-                    let imageUrlString = reaccionIndividual.Imagen
-                    let imageUrl = URL(string: imageUrlString)!
-                    let imageData = try! Data(contentsOf: imageUrl)
-                    let imagenTemporal = UIImage(data: imageData)
-                    imagenDeLaReaccion.image = imagenTemporal
+                    //Ya noy hay imágenes, ahora son modelos
+                    /*
+                     let imageUrlString = reaccionIndividual.Imagen
+                     let imageUrl = URL(string: imageUrlString)!
+                     let imageData = try! Data(contentsOf: imageUrl)
+                     let imagenTemporal = UIImage(data: imageData)
+                     imagenDeLaReaccion.image = imagenTemporal
+                     */
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
@@ -258,11 +298,14 @@ class ViewController2: UIViewController {
                     //botonIformacionAdicional.setTitle("4", for: .normal);
                     //botonIformacionAdicional.setTitle("Ver más sobre gas de cocina butano", for: .normal);
                     
-                    let imageUrlString = reaccionIndividual.Imagen
-                    let imageUrl = URL(string: imageUrlString)!
-                    let imageData = try! Data(contentsOf: imageUrl)
-                    let imagenTemporal = UIImage(data: imageData)
-                    imagenDeLaReaccion.image = imagenTemporal
+                    //Ya noy hay imágenes, ahora son modelos
+                    /*
+                     let imageUrlString = reaccionIndividual.Imagen
+                     let imageUrl = URL(string: imageUrlString)!
+                     let imageData = try! Data(contentsOf: imageUrl)
+                     let imagenTemporal = UIImage(data: imageData)
+                     imagenDeLaReaccion.image = imagenTemporal
+                     */
                     
                     break;
                 }else if (reaccionRecibida == reaccionIndividual.NombreReaccion){
@@ -289,11 +332,14 @@ class ViewController2: UIViewController {
                     //botonIformacionAdicional.setTitle("5", for: .normal);
                     //botonIformacionAdicional.setTitle("Ver más sobre gas de cocina metano", for: .normal);
                     
-                    let imageUrlString = reaccionIndividual.Imagen
-                    let imageUrl = URL(string: imageUrlString)!
-                    let imageData = try! Data(contentsOf: imageUrl)
-                    let imagenTemporal = UIImage(data: imageData)
-                    imagenDeLaReaccion.image = imagenTemporal
+                    //Ya noy hay imágenes, ahora son modelos
+                    /*
+                     let imageUrlString = reaccionIndividual.Imagen
+                     let imageUrl = URL(string: imageUrlString)!
+                     let imageData = try! Data(contentsOf: imageUrl)
+                     let imagenTemporal = UIImage(data: imageData)
+                     imagenDeLaReaccion.image = imagenTemporal
+                     */
                     
                     break;
                 }
@@ -346,12 +392,14 @@ class ViewController2: UIViewController {
             return "Butano";
         case "DioxidoDeCarbono":
             return "Dióxido de Carbono"
-        case "Fructosa":
-            return "Fructosa";
+        case "Fructuosa":
+            return "Fructuosa";
         case "Glucosa":
             return "Glucosa";
         case "Metano":
             return "Metano"
+        case "Sacarosa":
+            return "Sacarosa";
         case "Octano":
             return "Octano";
         case "Oxigeno":
@@ -396,8 +444,14 @@ class ViewController2: UIViewController {
         }else if(segue.identifier == "componente4"){
             let vistaComponente = segue.destination as! ViewController4;
             vistaComponente.componenteRecibido = elemento4;
+        }else if(segue.identifier == "secundarioUno"){
+            let vistaRealidadAumentada = segue.destination as! ViewController5;
+            vistaRealidadAumentada.elementoRecibido = elemento3;
+        }else if(segue.identifier == "secundarioDos"){
+            let vistaRealidadAumentada = segue.destination as! ViewController5;
+            vistaRealidadAumentada.elementoRecibido = elemento4;
         }
     }
     
-
+    
 }
