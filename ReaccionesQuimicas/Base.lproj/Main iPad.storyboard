@@ -447,11 +447,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Luis Alfonso Rojo Sánchez
 Roberto Pérez Barrera
-Miguel Ángel Alvarado López
-Alumno FIS 1
-Alumno FIS 2
-Alumno FIS 3
-Alumno FIS 4</string>
+Miguel Angel Alvarado López
+Alfredo Osuna
+Emiliano Aguirre
+Diego Solis Cortez
+Ricardo Cázares</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
