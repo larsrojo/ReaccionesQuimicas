@@ -37,7 +37,7 @@ class ViewController5: UIViewController, ARSCNViewDelegate {
             let box = SCNBox(width: 0.0, height: 0.0, length: 0.0, chamferRadius: 0);
             let boxNode = SCNNode();
             boxNode.geometry = box
-            boxNode.position = SCNVector3(0, 0, 0)
+            boxNode.position = SCNVector3(50, 0, 50)
             
             scene.rootNode.addChildNode(boxNode)
             */
